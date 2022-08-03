@@ -1,0 +1,283 @@
+%
+% ========================================================================
+%
+%  	
+%
+%   Authors: 
+%   Created: Jan, 2012.
+%
+% ========================================================================
+% ----------------------------------
+%  Class and Packages
+% ----------------------------------
+
+%\documentclass[portait,custom]{sciposter}
+\documentclass[landscape,custom]{sciposter}
+
+% ----------------------------------
+%  Customization and Macros
+% ----------------------------------
+
+\usepackage{local}
+
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=true,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black,breaklinks=true}
+\usepackage{supertabular}
+\usepackage{rotating,multirow}
+%\usepackage{soul}
+\usepackage[multidot]{grffile}
+\usepackage{dcolumn}
+\newcolumntype{s}{D{.}{.}{1.2}}
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,~}
+%\usepackage[comma,sort]{natbib}
+%\bibliographystyle{plainnat}
+
+\usepackage{comment}
+
+\usepackage{sectionbox}
+
+% ========================================================================
+\leftlogo{
+\hspace*{-0.01in}
+            \raisebox{-100pt}{\begin{minipage}[c]{5.0in}\centering
+	    \includegraphics[width=\columnwidth]{logos/ORNL_logo.pdf}
+           %\includegraphics[width=\columnwidth]{logos/RUBISCO_logo_for_posters.eps} \\
+           %vskip-0.35in\includegraphics[width=\columnwidth]{logos/CCSI_Text_Logo_transparent.png}%
+\end{minipage}
+%\hspace*{-0.85in}
+}
+
+            %\hspace*{12pt}
+            %\raisebox{-265pt}{\includegraphics[height=2.00in]{logos/CCSI_Text_Logo_transparent.png}}%
+            %%\hspace*{25pt}%
+            %%\raisebox{-190pt}{\includegraphics[height=2.00in]{logos/CCSI_logo_FMH.pdf}}%
+}
+\rightlogo{
+\hspace*{-4.0in} 
+           \hspace*{-2.0in}
+           \raisebox{-100pt}{\begin{minipage}[c]{6.0in}\centering
+            %\includegraphics[width=\columnwidth]{logos/uci_peter.png} \\
+            %\vskip-0.35in 
+            %\includegraphics[width=\columnwidth]{logos/ess_logo_white.pdf}
+			   \includegraphics[width=0.9\columnwidth]{logos/CCSI_Text_Logo_transparent.png}%
+\end{minipage}
+}
+}
+
+\newcommand{\VERYHUGE}{\fontsize{80.00}{20.00}\selectfont}
+
+% AGU 2014 Poster Title
+%\title{\VERYHUGE \vbox{\fbox{GC41C-0573} Long-term Terrestrial Carbon and Water Cycle Responses to Projected Climate Change Beyond 2100}}
+% CCSI SAB Poster Title
+%\title{\VERYHUGE \vbox{Long-term Terrestrial Carbon and Water Cycle Responses to Projected Climate Change Beyond 2100}}
+% AGU 2015 Poster Title
+%\title{\VERYHUGE\color{RUBISCO-DarkSlateBlue} \vbox{Nonlinear Interactions between Climate and Atmospheric Carbon Dioxide Drivers of Terrestrial and Marine Carbon Cycle Changes from 1850 to 2300}}
+\title{\VERYHUGE\color{RUBISCO-DarkSlateBlue} \vbox{Quantifying Feedbacks of Climate Intervention Under Climate Change}}
+
+\author{%\normalsize
+  Forrest~M.~Hoffman$\mbox{}^\textnormal{1}$,
+  Min~Xu$\mbox{}^\textnormal{1}$,
+  Wei~Zhang$\mbox{}^\textnormal{1}$,
+  Salil~Mahajan$\mbox{}^\textnormal{1}$,
+  Xiaojuan~Yang$\mbox{}^\textnormal{1}$,
+  Cheng-En~Yang$\mbox{}^\textnormal{2}$,
+  and
+  the~Climate~Intervention~Biology~Working~Group
+  }
+
+
+% institute name
+\institute{\small
+  %$\mbox{}^\textnormal{1}$Department of Earth System Sciences, University of California, Irvine, California 92697, USA;
+  $\mbox{}^\textnormal{1}$Climate Change Science Institute, Oak Ridge National Laboratory, Oak Ridge, Tennessee 37831, USA; \\
+  %$\mbox{}^\textnormal{3}$Department of Atmospheric Sciences and Department of Biology, University of Washington, Seattle, WA~98195-1640, USA;
+  %$\mbox{}^\textnormal{4}$Earth Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA~94720, USA; \\
+  %$\mbox{}^\textnormal{5}$Earth and Atmospheric Sciences, Cornell University, Ithaca, New York 14853, USA;
+  %$\mbox{}^\textnormal{6}$Climate \& Global Dynamics Division, National Center for Atmospheric Research, Boulder, Colorado 80307, USA
+  and
+  $\mbox{}^\textnormal{2}$Department of Civil \& Environmental Engineering, University of Tennessee, Knoxville, Tennessee 37996, USA
+}
+
+% ========================================================================
+\setmargins[2cm]
+
+\begin{document}
+
+\conference{Gordon Research Conference on Climate Engineering (June 27--July 1, 2022), Newry, Maine, USA \hfill Oak Ridge National Laboratory (ORNL) is managed by UT-Battelle, LLC, for the U.S.\ Department of Energy under contract DE-AC005-00OR22725.}
+
+\vspace*{0.5in}
+\maketitle
+
+% For the SciDAC3 PI Meeting, we are forbidden to use any DOE logos!
+%\includegraphics[height=1.25in]{logos/ANL_logo}\hfill\includegraphics[height=1.25in]{logos/LLNL_logo}\hfill\includegraphics[height=1.25in]{logos/LANL_logo}\hfill\includegraphics[height=1.25in]{logos/NCAR_logo}\hfill\includegraphics[height=1.25in]{logos/ORNL_logo}\hfill\includegraphics[height=1.25in]{logos/PNNL_logo}\hfill\includegraphics[height=1.25in]{logos/SNL_logo}
+
+\vspace*{-0.75in}
+
+\begin{multicols}{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\large Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\large Potential Ecological Impacts of Climate Intervention}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{ecological_impacts}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\large Terrestrial Biogeochemical Feedbacks In a Strategically Geoengineered Climate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{bgc_feedbacks}
+
+\null\vskip0.30in
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\section*{\large Climate Intervention Research Needs}
+%\section*{\large National Academies Report Calls for Climate Intervention Research}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{nasem_report}
+
+%\null\vskip0.30in
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\large Large-Scale Simulation Approach to Informing Policymakers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{gpp_change}
+
+%\null\vskip-0.60in
+\input{CDR+SAI}
+
+%\vskip-0.25in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{\large Discussion and Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\vspace*{-0.25in}
+%\input{discussion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{\large Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{itemize}
+%\item Blah
+%
+%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{\large References}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\medskip
+%\vbox{\hangindent=0.25in\hangafter=1
+%Forrest M.\ Hoffman, James T.\ Randerson, Vivek K.\ Arora, Qing Bao, Patricia Cadule, Duoying Ji, Chris D.\ Jones, Michio Kawamiya, Samar Khatiwala, Keith Lindsay, Atsushi Obata, Elena Shevliakova, Katharina D.\ Six, Jerry F.\ Tjiputra, Evgeny M.\ Volodin, and Tongwen Wu (2014), Causes and implications of persistent atmospheric carbon dioxide biases in Earth System Models, \textit{J.\ Geophys.\ Res.\ Biogeosci.}, 119(2):141--162. doi: 10.1002/2013JG002381.}
+%
+%{
+%\nocite{Hoffman_JGRB_20140201}
+% \scriptsize%\rm
+% \bibliographystyle{unsrtnat}
+%\vskip-0.5in
+% \bibliography{refs/abbrev,%
+%refs/Hoffman_JGRB_20140201%
+%}
+%}
+
+{
+\nocite{Lawrence_NatCommun_20180913,%
+Reflecting_Sunlight_2021,%
+Yang_ERL_20200928,%
+Zarnetske_PNAS_20210413}
+%\scriptsize%\rm
+\renewcommand\refname{\large References%
+%\vspace{-0.75\baselineskip}
+}
+%\bibliographystyle{unsrtnat}
+\bibliographystyle{refs/agufull08}
+%\vskip-0.5in
+\bibliography{refs/abbrev,%
+refs/Lawrence_NatCommun_20180913,
+refs/Reflecting_Sunlight_2021,
+refs/Yang_ERL_20200928,
+refs/Zarnetske_PNAS_20210413%
+}
+}
+
+%\vspace*{-0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\large Acknowledgements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{center}
+%  \vskip-0.25in
+%  \includegraphics[width=0.50\columnwidth]{logos/DOE_Office_of_Science_logo.pdf}
+%  \hskip0.50in
+%  \includegraphics[width=0.16\columnwidth]{logos/USFS_Logo.png}
+% \end{center}
+
+\vspace*{-0.15in}
+%\smallskip
+\vbox{%\small
+This research is supported by the Oak Ridge National Laboratory (ORNL)
+Laboratory Director's Reserach and Development (LDRD) Fund.
+Additional support was provided by the Reducing Uncertainties in
+Biogeochemical Interactions through Synthesis and Computation (RUBISCO)
+Science Focus Area, which is sponsored by the Regional and Global Model
+Analysis (RGMA) activity of the Earth \& Environmental Systems Modeling
+(EESM) Program in the Earth and Environmental Systems Sciences Division
+(EESSD) of the Office of Biological and Environmental Research (BER)
+in the US Department of Energy Office of Science.
+%
+The Climate Intervention Biology Working Group is funded by the National
+Science Foundation (1937619, PI: J. Gurevitch; 1937699, PI: P. Zarnetske).
+%
+This research used resources of the Oak Ridge Leadership Computing
+Facility (OLCF) at Oak Ridge National Laboratory (ORNL), which is managed
+by UT-Battelle, LLC, for the US Department of Energy under Contract
+No.\ DE-AC05-00OR22725.
+%
+%The Lawrence Berkeley National Laboratory is managed by the University
+%of California for the U.\ S.\ Department of Energy under Contract No.\
+%DE-AC02-05CH11231.
+%
+%The National Center for Atmospheric Research (NCAR) is sponsored primarily
+%by the National Science Foundation.
+%
+%The United States Government retains and the publisher, by accepting the
+%article for publication, acknowledges that the United States Government
+%retains a non-exclusive, paid-up, irrevocable, world-wide license to
+%publish or reproduce the published form of this manuscript, or allow
+%others to do so, for United States Government purposes.
+%
+%We acknowledge the World Climate Research Programme's Working Group
+%on Coupled Modelling, which is responsible for CMIP, and we thank the
+%climate modeling groups (listed in Table~1 of this
+%poster) for producing and making available their model output. For CMIP
+%the U.\ S.\ Department of Energy's Program for Climate Model Diagnosis
+%and Intercomparison provides coordinating support and led development
+%of software infrastructure in partnership with the Global Organization
+%for Earth System Science Portals.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{\Large\centering
+%\begin{tabular}{b{0.77\columnwidth} c}
+%  \textcolor{blue}{\textbf{Want a copy of this poster to read later?  Just scan this QR code with your smartphone!}} & \\ %\includegraphics[width=0.2\columnwidth]{figures/qrcode.22265053.png} \\
+%\end{tabular}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{multicols}
+\end{document} 
